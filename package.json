@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"sqlite3": "latest",
+		"express": "latest",
+		"body-parser": "latest",
+		"cors": "latest"
+	}
+}
