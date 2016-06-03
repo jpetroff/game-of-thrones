@@ -1,6 +1,5 @@
 express = require 'express'
 bodyParser = require 'body-parser'
-cors = require 'cors'
 sqlite3 = require('sqlite3').verbose()
 
 app = do express
