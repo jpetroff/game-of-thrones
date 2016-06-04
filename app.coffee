@@ -20,7 +20,7 @@ app.post '/change-stats', (req, res) ->
 	token = req.body.token
 
 	if token != HARD_TOKEN
-		res.send 'Unauthorized'
+		return res.send 'Unauthorized'
 
 	console.log req.body
 
