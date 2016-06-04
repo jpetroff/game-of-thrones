@@ -38,5 +38,5 @@ app.get '/stats', (req, res) ->
 
 		res.send rows
 
-app.listen '80', '0.0.0.0', () ->
+app.listen '8000', '0.0.0.0', () ->
 	 console.log '[express-server]: started'
