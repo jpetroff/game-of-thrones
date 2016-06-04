@@ -6,6 +6,8 @@ app = do express
 
 db = new sqlite3.Database './chars.db'
 
+HARD_TOKEN = 'zw3x4e5cr6tv7ybuoNPj5i0s'
+
 # MIDDLEWARES
 app.use bodyParser.json()
 app.use bodyParser.urlencoded { extended: true }
@@ -15,6 +17,10 @@ app.post '/change-stats', (req, res) ->
 
 	name = req.body.name
 	prediction = req.body.prediction
+	token = req.body.token
+
+	if token != HARD_TOKEN
+		res.send 'Unauthorized'
 
 	console.log req.body
 
