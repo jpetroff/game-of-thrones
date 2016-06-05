@@ -1,3 +1,5 @@
 curl -H "Content-Type: application/json" -X POST -d '{"name":"john_snow","prediction":"die"}' http://localhost/change-stats
 curl -H "Content-Type: application/json" -X POST -d '{"name":"john_snow","prediction":"survive"}' http://localhost/change-stats
+curl -H "Content-Type: application/json" -X POST -d '{"name":"john_snow","prediction":"survive"}' http://game-of-thrones-api.tk/change-stats
 curl http://localhost/stats
+curl http://game-of-thrones-api.tk/stats
